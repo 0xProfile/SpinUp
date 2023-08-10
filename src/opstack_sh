@@ -1,0 +1,16 @@
+cd $HOME
+git clone https://github.com/celestiaorg/optimism
+cd optimism
+git checkout v0.1.2-OP_v1.0.6-CN_v0.11.0-rc8
+
+cd $HOME
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.2
+echo '. "$HOME/.asdf/asdf.sh"' >> ~/.bashrc
+echo '. "$HOME/.asdf/completions/asdf.bash"' >> ~/.bashrc
+
+
+export PATH=$PATH:~/.asdf/bin/
+
+#TODO:
+Continue add commands from: 
+https://docs.celestia.org/developers/optimism-devnet/
