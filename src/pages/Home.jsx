@@ -27,7 +27,9 @@ const Home = () => {
       ImageId: 'ami-05a523aa29215c782',
       InstanceType: 't2.xlarge',
       MinCount: 1,
-      MaxCount: 1
+      MaxCount: 1,
+      KeyName: 'keyPair',
+      SecurityGroupIds: ['sg-03d9b97a8e0206f11'],
     };
     try {
 
